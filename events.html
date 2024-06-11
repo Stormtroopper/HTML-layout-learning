@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Eventide-VR Assistant Workshop</title>
+</head>
+<body>
+  <section id="navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-calendar-week-fill "></i> Eventide</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto" id="list">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#service">Events<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">SignUp</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  </section>
+
+    
+    <section id="banner">
+        <div class="container-fluid" id="banner-container">
+            <div class="row" id="banner-row">
+                <div class="col-md-6 text-white" id="banner-col">
+                    <div class="card bg-dark">
+                        <div class="card-body p-4 py-3">
+                            <h3 class="text-white text-bold">VR Assitant Workshop</h3>
+                            <span class="badge badge-success">Business and Seminars</span>
+                            <span class="badge badge-success">Free Tickets</span>
+
+                          </div>
+                        <div class="card-footer bg-primary"id="footer">
+                          <div>
+                            <span><strong>Share Events</strong></span>
+                            <a><i class="bi bi-facebook"></i></a>
+                            <a><i class="bi bi-twitter-x"></i></a>
+                            <a><i class="bi bi-instagram"></i></a>
+
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6" id="banner-col2">
+                    <div class="card" id="second-card">
+                        <div class="card-body">
+                          <h4 ><b>Location</b></h4>
+                          <p><b>Fremont Street Experience</b></p>
+                          <p>Old Downtown Las Vegas 89102</p>
+                          <p>Las Vegas, Nevada, United States</p>
+                          <p><b>From</b>: 26 Nov 2025 06:30 PM (UTC)<br></p>
+                          <p><b>To</b>: 26 Nov 2025 10:00 PM (UTC)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="container-fluid" id="service-container">
+            <div class="card" >
+                <div class="card-body text-center">
+                    <h3 class="text-center text-bold">Get Tickets</h3> 
+                   <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    <img src="ticket.png" width="10%"/> Buy Now
+                </button>
+  
+  <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center border-0">
+                          <div class="modal-title w-100">
+
+                            <h5 class="mb-0 h-3" id="exampleModalLongTitle"><strong>VR Assitant Workshop</strong></h5>  
+                            <ul class="list-group list-group-horizontal list-group-flush justify-content-center">
+                                <li class="list-group-item text-sm border-0 px-0 g-2 pe-sm-1">
+                                  <i class="bi bi-geo-alt "></i><small>Fremont Street Experience</small>
+                                </li>
+                                <li class="list-group-item text-sm border-0 px-0 pe-sm-3">
+                                  <i class="bi bi-clock"></i><small>6:30PM(IST)</small>
+                                </li>
+                                <li class="list-group-item text-sm border-0 px-0 pe-sm-3">
+                                  <i class="bi bi-calendar-date"></i><small>26-11-2025</small>
+                                </li>
+                            </ul>      
+                          </div>
+                      </div>
+                        <div class="modal-body">
+                          <form method="POST">
+                            <input type="hidden" name="event_id" class="form-control" value="4"/>
+                            <input type="hidden" name="booking_date" class="form-control" value="4"/>
+                            <input type="hidden" name="customer_id" class="form-control" value="4"/>
+                            <div class="px lg-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h2 class="mb-2 h4"><b>No of Tickets</b></h2>
+                                </div>
+                                <div class="col-6">
+                                  <div class="form-group text-left">
+                                    <input type="range" class="form-control" min="1" max="10"/>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <p class="mb-2 h6">Cart Total</p>
+                                  <ul class="list-group">
+                                    <li class="list-group-item mb-3">
+
+                                      <div id="d-flex justify-content-between">
+                                        <h6 class="my-0">
+                                          <strong>Total Tickets</strong>
+                                          </h6>
+                                        <strong class="ticket-selected">1</strong>
+                                      </li>
+                                    <li class="list-group-item mb-3">
+
+                                      <div id="d-flex justify-content-between">
+                                        <h6 class="my-0">
+                                          <strong>Total Orders</strong>
+                                          </h6>
+                                        <strong class="ticket-selected">0</strong>
+                                      </li>
+                                    </div>
+                                    </div>
+
+                                  </div>
+                                  </ul>
+                                </div>
+                              <div class="modal-footer ">
+                                  <button type="button" class="btn btn-primary"><i class="bi bi-bag-plus"></i>Checkout</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                              </div>
+                              </div>
+                          </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                            
+    </div>
+    <div class="card mb-4" >
+           <div class="card-body">
+                <h1 class="text-left text-bold">Overview</h1>
+                <p>And sir dare view but over man. So at within mr to simple assure. Mr disposing continued it offending arranging in we. Extremity as if breakfast agreement. Off now <b>mistress</b> provided out horrible opinions. Prevailed mr tolerably discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+
+                    Unpleasant astonished an diminution up partiality. 
+                    
+                        
+                </p>
+                    
+                    <p>   Noisy an their of meant. Death means up civil do an offer wound of. Called square an in afraid direct. Resolution diminution conviction so mr at unpleasing simplicity no.                           
+                    No it as breakfast up conveying earnestly immediate principle.
+                    Him son disposed produced humoured overcame she bachelor improved.
+                    Studied however out wishing but inhabit fortune windows.</p>
+                    <h1>At as in understood an remarkably solicitude.</h1>
+
+
+                    Mean them very seen she she. Use totally written the observe pressed justice. Instantly cordially far intention recommend estimable yet her his. Ladies stairs enough esteem add fat all enable. Needed its design number winter see. Oh be me sure wise sons no. Piqued ye of am spirit regret. Stimulated discretion impossible admiration in particular conviction up.
+
+
+
+                Is allowance instantly strangers applauded discourse so. Separate entrance welcomed sensible laughing why one moderate shy. We seeing piqued garden he. As in merry at forth least ye stood. And cold sons yet with. Delivered middleton therefore me at. Attachment companions man way excellence how her pianoforte. </p>
+                </div>
+            </div>
+        </div>
+</div>
+    </section>
+    <section id="gallery">
+    <div class="card mb-4" >
+           <div class="card-body">
+                <h1 class="text-center text-bold">Event Gallery</h1>
+                <div class="row" id="banner-row">
+                <div class="col-md-4" id="service-col1">
+                  <div class="card" style="width: 20rem;">
+                    <img src="https://eventmie.classiebit.com/storage/events/February2024/1708931841eByi3Iq6CU.webp" class="card-img-top" alt="...">
+                    
+                  </div>
+                  </div>
+                <div class="col-md-4" id="service-col2">
+                  <div class="card" style="width: 20rem;">
+                    <img src="https://eventmie.classiebit.com/storage/events/February2024/170893170621YOQVMuYO.webp" class="card-img-top" alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-md-4" id="service-col2">
+                  <div class="card" style="width: 20rem;">
+                    <img src="https://eventmie.classiebit.com/storage/events/February2024/170893170621YOQVMuYO.webp" class="card-img-top" alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-md-4" id="service-col2">
+                  <div class="card" style="width: 20rem;">
+                    <img src="https://eventmie.classiebit.com/storage/events/February2024/170893170621YOQVMuYO.webp" class="card-img-top " alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-md-4" id="service-col2">
+                  <div class="card" style="width: 20rem;">
+                    <img src="https://eventmie.classiebit.com/storage/events/February2024/1708931659b8WzbRLUg3.webp" class="card-img-top" alt="...">
+                    
+                  </div>
+                </div>
+                <div class="col-md-4" id="service-col2">
+                    <div class="card" style="width: 20rem;">
+                      <img src="https://eventmie.classiebit.com/storage/events/February2024/1708931876fIBXdxcGcw.webp" class="card-img-top" alt="...">
+                      
+                    </div>
+                  </div>
+
+
+            </div>
+        </div>
+</div>
+    </section>
+        <footer class="footer p-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="text-white">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="bi bi-envelope"></i> Email</a></li>
+              <li><a href="#"><i class="bi bi-telephone"></i> Phone</a></li>
+              <li><a href="#"><i class="bi bi-book"></i> Address</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-white">Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i> Twitter</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  
+</body>
+</html>

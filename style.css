@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: .78rem;
+    text-align: center;
+}
+
+#banner {
+    background-image: url('https://eventmie.classiebit.com/storage/events/February2024/1708931841eByi3Iq6CU.webp');
+    background-size:auto;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#banner-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#banner-col {
+    flex-basis: 50%;
+    padding: 2rem;
+    }
+
+#banner-col2 {
+    flex-basis: 50%;
+    padding: 2rem;
+}
+
+#gallery {
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+#gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#service-col1, #service-col2, #service-col3 {
+    flex-basis: 33.33%;
+    padding: 2rem;
+}
+#service {
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+#service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#service-col1, #service-col2, #service-col3 {
+    flex-basis: 33.33%;
+    padding: 2rem;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+button{
+    width: 40%;
+
+}
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding:14px;
+    margin: auto;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background 0.25s;
+}
+.search:focus-within{
+    background: #f2f2f2;
+}
+.custom-select{
+    color: black;
+    margin-left: 14px;
+    padding: 8px;
+    outline:none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+}
+.search-ip{
+    font-size: larger;
+    color: black;
+    margin-left: 14px;
+    padding: 14px;
+    outline:none;
+    border: none;
+    background: transparent;
+}
+.bi{
+    color: rgba(0,0,0,0.6);
+}
+.search-ip::placeholder {
+    color: rgba(0,0,0,0.25);
+    font-size: large;
+}
+/* .nav-item:hover{
+    
+} */
+ /* 
